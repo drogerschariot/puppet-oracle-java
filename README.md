@@ -37,4 +37,6 @@ For example, if you downloaded the <b>jdk-7u21-linux-x64.tar.gz</b>, your params
  version  => “7u21“<br />
  os       => “linux”<br />
  
+ ### Contrib ###
+ Fork and request!
  
