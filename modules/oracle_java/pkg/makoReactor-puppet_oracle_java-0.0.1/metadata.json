@@ -1,0 +1,22 @@
+{
+  "checksums": {
+    "manifests/params.pp": "edcbc70609c6e31b30789182a2619562",
+    "Modulefile": "9c32205a431d06803c89281a5caa049b",
+    "manifests/init.pp": "7cf81ad13282ad2a7b86a08002d23e3e",
+    "files/put_packages_here": "e01b7540e0a4719902321b6c115355a5"
+  },
+  "license": "Apache License, Version 2.0",
+  "author": "makoReactor",
+  "source": "UNKNOWN",
+  "project_page": "UNKNOWN",
+  "types": [
+
+  ],
+  "description": "Installs Oracle JDK or JRE 1.6 or 1.7. Tested using Puppetry.",
+  "dependencies": [
+
+  ],
+  "name": "makoReactor/puppet_oracle_java",
+  "summary": "UNKNOWN",
+  "version": "0.0.1"
+}
