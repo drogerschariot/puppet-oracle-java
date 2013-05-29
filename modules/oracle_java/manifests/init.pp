@@ -1,13 +1,13 @@
 # Class: oracle_java
 #
-# Installs Oracle JDK or JRE 1.6 or 1.7. Main java directories will be install in /usr/lib/jvm.
+# Installs Oracle JDK or JRE 1.6 or 1.7. Main java directory  will be install in /usr/lib/jvm.
 #
 # Params:
 # ---------
 #	$type 		- jdk or jre
 #	$arc		- i586 or x64
 #	$version	- version of java package
-#	$os			- should only be linux for now
+#	$os		- should only be linux for now
 #
 # It is import that you match the params with the java package you downloaded from oracle.
 #
@@ -24,16 +24,19 @@
 #	type 		=> "<type>",
 #	arc 		=> "<arc>,
 #	version		=> "<version>",
-#	os			=> "linux",
+#	os		=> "linux",
 # }
 
 class oracle_java (
 	$type 		= "jdk",
 	$arc 		= "x64",
-	$version	= "7u21",
-	$os			= "linux"
-	) inherits oracle_java::params
+	$version	= undef,
+	$os		= "linux"
+	) 
 {
+
+	require oracle_java::params
+
 	$jvm_path = $oracle_java::params::jvm_path
 	$java_file = $oracle_java::params::java_file
 	$java_dir = $oracle_java::params::java_dir
@@ -50,7 +53,7 @@ class oracle_java (
 
 	file { "${jvm_path}/${java_file}":
 		ensure 	=> present,
-		source	=> "puppet:///modules/oracle-java/${java_file}",
+		source	=> "puppet:///modules/oracle_java/${java_file}",
 		require	=> File[ $jvm_path ],
 	}
 
