@@ -27,6 +27,7 @@ class { "oracle-java":
 &nbsp;&nbsp;&nbsp; os        => "<b>linux</b>",
 }
 </code>
+</pre>
 
 It is import that you match the params with the java package you downloaded from oracle.
 
@@ -37,6 +38,8 @@ For example, if you downloaded the <b>jdk-7u21-linux-x64.tar.gz</b>, your params
  version  => “7u21“<br />
  os       => “linux”<br />
  
- ### Contrib ###
+
+###Contrib
+ 
  Fork and request!
  
