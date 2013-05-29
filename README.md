@@ -13,14 +13,14 @@ Tested:
 ### Install ###
 
 - Add module to your puppetmaster or masterless environment.
-- Download jdk or jre 1.6 or 1.7 from [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and place the package in the files directory (do not rename).
+- Download jdk or jre 1.6 or 1.7 from [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and place the package in the oracle_java/files directory (do not rename).
 
 ### Usage ###
 
 - Declare the class:
 <pre>
 <code>
-class { "oracle-java":
+class { "oracle_java":
 &nbsp;&nbsp;&nbsp; type      => "<i>type</i>",
 &nbsp;&nbsp;&nbsp; arc       => "<i>arc</i>,
 &nbsp;&nbsp;&nbsp; version   => "<i>version</i>",
