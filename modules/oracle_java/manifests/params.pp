@@ -1,6 +1,7 @@
 # Class: oracle_java::params
 #
-# Declares distro specific variables or oracle_java class. 
+# Declares distro specific variables for oracle_java class. 
+
 class oracle_java::params {
 
 	$java_dir = "${type}-${version}"
