@@ -1,13 +1,7 @@
 puppet-oracle-java
 ------------------
 
-Installs Oracle JDK or JRE 1.6 or 1.7. Tested using [Puppetry](https://github.com/drogerschariot/Puppetry). 
-
-
-Tested:
-* Ubuntu 12.04
-* Debian 7
-* CentOS 6.4
+Installs Oracle JDK or JRE 1.6 or 1.7. Tested Ubuntu 12.04, Debian 7, and CentOS 6.4 using [Puppetry](https://github.com/drogerschariot/Puppetry). 
 
 
 ### Install ###
