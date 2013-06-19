@@ -12,11 +12,16 @@ Tested:
 
 ### Install ###
 
-- Add module to your puppetmaster or masterless environment.
+- Clone module to your puppetmaster or masterless modules directory.
+- Change name of module from puppet-oracle-java to oracle_java
+
+### Basic Config ###
+
+To install default <b>JDK 7x64</b>, simply add ‘include oracle_java’ to your manifest.
+
+### Custom Java Config ###
+
 - Download jdk or jre 1.6 or 1.7 from [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and place the package in the oracle_java/files directory (do not rename).
-
-### Usage ###
-
 - Declare the class:
 <pre>
 <code>
