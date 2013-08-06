@@ -10,7 +10,7 @@ SCP = "scp -r "
 
 task :deploy do
 	sh "ssh -p #{MASTER_PORT} -i ~/.ssh/id_puppettest #{USER}@#{HOST} 'rm -rf /etc/puppet/modules/oracle_java'"
-	sh "#{SCP} -P #{MASTER_PORT} -i ~/.ssh/id_puppettest ~/projects/puppet-oracle-java #{USER}@#{HOST}:/etc/puppet/modules/oracle_java"
+	sh "#{SCP} -P #{MASTER_PORT} -i ~/.ssh/id_puppettest ~/projects/puppet/puppet-oracle-java #{USER}@#{HOST}:/etc/puppet/modules/oracle_java"
 	sh "#{SCP} -P #{MASTER_PORT} -i ~/.ssh/id_puppettest site.pp #{USER}@#{HOST}:/etc/puppet/manifests/"
 end
 
