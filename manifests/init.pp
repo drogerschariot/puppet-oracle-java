@@ -30,7 +30,7 @@
 class oracle_java (
 	$type 		= "jdk",
 	$arc 		= "x64",
-	$version	= "7u21",
+	$version	= "7u25",
 	$os			= "linux"
 	) 
 {
