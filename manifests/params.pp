@@ -5,7 +5,7 @@
 class oracle_java::params (
   $type    = "jdk",
   $arc     = "x64",
-  $version = "7u25",
+  $version = "8u5",
   $os      = "linux"
 ){
 
@@ -20,8 +20,12 @@ class oracle_java::params (
     $java_file = "${type}-${version}-${os}-${arc}.tar.gz"
     $unrar_command = "mkdir ${java_dir} && tar -zxf ${java_file} -C ${java_dir} --strip-components 1"
   }
+  elsif $version =~ /^[8][a-z0-9_-]{2,10}$/ {
+    $java_file = "${type}-${version}-${os}-${arc}.tar.gz"
+    $unrar_command = "mkdir ${java_dir} && tar -zxf ${java_file} -C ${java_dir} --strip-components 1"
+  }
   else {
-    fail("Not a supported verion of Java. \$version needs to be 1.6 or 1.7! ")
+    fail("Not a supported verion of Java. \$version needs to be 1.6; 1.7 or 1.8! ")
   }
 
 

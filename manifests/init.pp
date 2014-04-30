@@ -1,6 +1,6 @@
 # Class: oracle_java
 #
-# Installs Oracle JDK or JRE 1.6 or 1.7. Main java directory  will be install in /usr/lib/jvm.
+# Installs Oracle JDK or JRE 1.6; 1.7 or 1.8 . Main java directory  will be install in /usr/lib/jvm.
 #
 # Params:
 # ---------
@@ -11,11 +11,11 @@
 #
 # It is import that you match the params with the java package you downloaded from oracle.
 #
-# For example, if you downloaded the ‘jdk-7u21-linux-x64.tar.gz’, your params should be:
+# For example, if you downloaded the ‘jdk-8u5-linux-x64.tar.gz’, your params should be:
 #
 # type    => “jdk”
 # arc     => “x64“
-# version => “7u21“
+# version => “8u5“
 # os      => “linux”
 #
 # Usage:
