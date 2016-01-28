@@ -1,9 +1,5 @@
 ~
 .swp
-pkg
-Modulefile
-site.pp
-Rakefile
 files/*.bin
 files/*.gz
 files/*.dmg
